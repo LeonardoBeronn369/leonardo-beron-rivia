@@ -146,11 +146,48 @@ gap: 1rem;
 }
 
 
-.imagen-inicio .descripcion{
+.imagen-inicio {
   display: inline-block;
   padding: 10px 20px;
   text-decoration: none;
   font-weight: bold;
+  outline: 1px solid;
+  border-radius: 10px;
+  margin-bottom: 4rem;
+  position: relative;
+}
+
+.imgSweaters:hover{
+  transform: scale(1.05);
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: .6;
+  transition: transform .75s;
+  border-radius: 10px;
+}
+
+.imgAbrigos:hover{
+  transform: scale(1.05);
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: .6;
+  transition: transform .75s;
+  border-radius: 10px;
+}
+
+.descripcion{
+  position: absolute;
+  left: 22px;
+  bottom: 15px;
+  font-size: 15px;
+  text-shadow: 0 0 1px rgba( 0, 0, 0, .5);
+  color: azure;
 }
 
 @media (min-width: 768px) {
@@ -397,6 +434,10 @@ margin-bottom: 1rem;
     width: 100%;
   }
 }  
+
+.fondoMensaje {
+  background-image: linear-gradient(rgb(199, 109, 109), rgb(227, 227, 222)); /* Estos colores los voy a cambiar es solo a modo prueba*/
+}
 
 /* Accesorios */
 .accesorios {
