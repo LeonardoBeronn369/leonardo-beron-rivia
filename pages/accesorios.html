@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital@1&family=Libre+Franklin:ital,wght@1,500&display=swap" rel="stylesheet">
     <title>Rivia Clothing</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -35,20 +36,54 @@
         </div>
         
     </header>
+    <nav>
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./nuevaColeccion.html">Nueva Coleccion</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Accesorios</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+              </li>
+          </ul>
+    </nav>
 
-    <div class="nav">
-        <nav>
-            <ul class="navegacion__header">
-                <li><a class="navegacion__link" href="../index.html">Inicio</a></li>
-                <li><a class="navegacion__link" href="./nuevaColeccion.html">Nueva Colección</a></li>
-                <li><a class="navegacion__link" href="#">Accesorios</a></li>
-                <li><a class="navegacion__link" href="./nosotros.html">Nosotros</a></li>
-                <li><a class="navegacion__link" href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+    <h2 class="accesorio_tit">Accesorios</h2>
+
+    <div class="img_accesor">
+      <article>
+        <div class="card bg-dark text-white">
+          <img src="../img/accesorio1.jpg" class="card-img" alt="...">
+          <div class="card-img-overlay">
+            <h5 class="card-title">Carteras</h5>
+            <p class="card-text">Confeccionadas en cuero sintético por lo que podrás disfrutar de un complemento resistente, durable y liviano para llevar todo lo que desees de manera segura</p>
+          </div>
+        </div>
+      </article>
+      
+      <article>
+        <div class="card bg-dark text-white">
+          <img src="../img/accesorio2.jpg" class="card-img" alt="...">
+          <div class="card-img-overlay">
+            <h5 class="card-title">Billeteras</h5>
+            <p class="card-text">Exclusiva y súper elegante billetera fichero</p>
+          </div>
+        </div>
+      </article>
     </div>
+   
+    
 
-    <div class="accesorios">
+    <!--
+<div class="accesorios">
         <div>
             <img class="imagen-accesorio" src="../img/accesorio1.jpg" alt="accesorio1">
         </div>
@@ -56,6 +91,8 @@
             <img class="imagen-accesorio" src="../img/accesorio2.jpg" alt="accesorio3">
         </div>
     </div>
+    -->
+    
     
     <footer class="footer">
         <div class="iconosFooter">
@@ -101,5 +138,7 @@
         </nav>
         <p class="parrafoFooter">RIVIA 2022 - Todos los derechos reservados.</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

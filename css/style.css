@@ -60,7 +60,10 @@ h3 {
 }
 
 .nav{
-    background-color: #fcd5ce;
+  background-color: #fcd5ce;
+}
+.nav-link{
+  color: white;
 }
 
 @media screen and (max-width: 768px) {
@@ -436,10 +439,16 @@ margin-bottom: 1rem;
 }  
 
 .fondoMensaje {
-  background-image: linear-gradient(rgb(199, 109, 109), rgb(227, 227, 222)); /* Estos colores los voy a cambiar es solo a modo prueba*/
+  background-image: linear-gradient( white, #cae9ff); /* Estos colores los voy a cambiar es solo a modo prueba*/
 }
 
 /* Accesorios */
+.accesorio_tit{
+  text-align: center;
+  margin: 2rem;
+}
+
+/*
 .accesorios {
     display: flex;
     flex-direction: row;
@@ -447,11 +456,23 @@ margin-bottom: 1rem;
     gap: 1rem;
     margin-top: 2rem;
     flex-wrap: wrap;   
+} */
+
+.img_accesor{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
 }
 
-.imagen-accesorio{
-    width: 350px;
-    height: 350px;  
+.card-text{
+  color: #fcd5ce;
+}
+
+.card-title{
+  color: #001d3d;
 }
 
 
@@ -564,3 +585,24 @@ object-fit: cover;
 }
 
 
+.carousel{
+  max-width: 400px;
+}
+
+.card {
+  max-width: 450px;
+}
+.nosotros_carousel{
+  display: flex;
+  flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    flex-wrap: wrap; 
+}
+
+
+.d-block{
+  width: 400px;
+  height: 500px;
+} 

@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital@1&family=Libre+Franklin:ital,wght@1,500&display=swap" rel="stylesheet">
     <title>Rivia Clothing</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -36,30 +37,74 @@
         
     </header>
 
-    <div class="nav">
-        <nav>
-            <ul class="navegacion__header">
-                <li><a class="navegacion__link" href="../index.html">Inicio</a></li>
-                <li><a class="navegacion__link" href="./nuevaColeccion.html">Nueva Colección</a></li>
-                <li><a class="navegacion__link" href="./accesorios.html">Accesorios</a></li>
-                <li><a class="navegacion__link" href="#">Nosotros</a></li>
-                <li><a class="navegacion__link" href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </div>
+    <nav>
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./nuevaColeccion.html">Nueva Coleccion</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./accesorios.html">Accesorios</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+              </li>
+          </ul>
+    </nav>
 
         <h1 class="titulo-nos">Nosotros</h1>
 
-        <div class="nosotros columnas">
-            <article class="nosotros-descripcion">
-                <img class="imag-nosotros" src="../img/nosotros1.png" alt="">
-            </article>
+        <div class="nosotros_carousel">
+          <article>
+                    <!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
 
-            <article class="nosotros-descripcion">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae repudiandae repellat quos, consequuntur nostrum aliquam quod nesciunt omnis. Dolores, possimus? Veritatis perferendis ea voluptatem facilis recusandae facere cupiditate aliquam ad?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit esse qui voluptatibus, possimus ipsa fugiat id incidunt.</p>
-            </article>
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+  </div>
+
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="../img/nosotros1.png" alt="Los Angeles" class="d-block w-100">
+    </div>
+    <div class="carousel-item">
+      <img src="../img/nosotros2.jpg" alt="Chicago" class="d-block w-100">
+    </div>
+    <div class="carousel-item">
+      <img src="../img/nosotros3.jpg" alt="New York" class="d-block w-100">
+    </div>
+  </div>
+
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+          </article>
+
+          <article class="nosotros-descripcion">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae repudiandae repellat quos, consequuntur nostrum aliquam quod nesciunt omnis. Dolores, possimus? Veritatis perferendis ea voluptatem facilis recusandae facere cupiditate aliquam ad?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit esse qui voluptatibus, possimus ipsa fugiat id incidunt.</p>
+        </article>
         </div>
+
+
+        
+
+           
+      
 
     <footer class="footer">
         <div class="iconosFooter">
@@ -106,5 +151,6 @@
         <p class="parrafoFooter">RIVIA 2022 - Todos los derechos reservados.</p>
     </footer>
     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
