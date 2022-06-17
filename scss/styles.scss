@@ -1,6 +1,6 @@
 @import 'variables';
 @import 'tipografias';
-
+@import 'mixins';
 
 * {
     margin: 0;
@@ -547,5 +547,48 @@ footer{
     width: 400px;
     height: 500px;
   } 
+
+button{
+  width: 90px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: #343434;
+  color: black;
+}
+
   
+/* Mapa */
+@each $detalle, $valor in $colores-detalles{
+  .detalle--#{$detalle}{
+    @extend button;
+    background-color: $valor;
+  }
+}
+
+.backg1{
+  background-color: #343434;
+}
+
+.backg2{
+  background-color: #001d3d
+}
+
+.backg3{
+  background-color: #e76f51; 
+}
+
+.prueba1{
+  @extend .backg1;
+  @include size(100px, 40px)
+}
+
+.prueba2{
+  @extend .backg2;
+  @include size(130px, 20px)
+}
+
+.prueba3{
+  @extend .backg3;
+  @include size(160px, 50px)
+}
 
