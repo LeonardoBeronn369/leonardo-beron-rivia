@@ -1,155 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital@1&family=Libre+Franklin:ital,wght@1,500&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital@1&family=Libre+Franklin:ital,wght@1,500&display=swap"
+      rel="stylesheet"
+    />
     <title>Rivia Clothing</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/styles.css">
-</head>
-<body>
-  
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/bdd71d7559.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <header class="header">
-        <a href="../index.html">
-            <img class="header__logo" src="../img/Logo.jpeg" alt="LogoTipo">
-        </a>
-        <div class="iconosNav">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                <circle cx="12" cy="11" r="3" />
-                <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
-              </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                <circle cx="10" cy="10" r="7" />
-                <line x1="21" y1="21" x2="15" y2="15" />
-              </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
-                <path d="M9 10a0.5 .5 0 0 0 1 0v-1a0.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a0.5 .5 0 0 0 0 -1h-1a0.5 .5 0 0 0 0 1" />
-              </svg>
-        </div>
-    
-        
-    </header>
-    <nav>
-        <ul class="nav justify-content-end">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Nueva Coleccion</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./accesorios.html">Accesorios</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./nosotros.html">Nosotros</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./contacto.html">Contacto</a>
-              </li>
+      <a href="../index.html">
+        <img class="header__logo" src="../img/Logo.jpeg" alt="LogoTipo" />
+      </a>
+      <div class="menuNuevo">
+        <nav class="menu">
+          <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="#">Nueva Colección</a></li>
+            <li><a href="./accesorios.html">Accesorios</a></li>
+            <li><a href="./nosotros.html">Nosotros</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
           </ul>
-    </nav>
+        </nav>
+      </div>
+    </header>
 
     <h1 class="titulo-produc">Nuestros Productos</h1>
 
-    <main class="nuestros-product">
-       
-            <div class="producto-1">
-                <img class="img-produc" src="../img/imag1.jpeg" alt="">
-                <p class="product-descripcion">Lorem ipsum dolor sit amet, consectet</p>
-                <p class="product-precio">$1234</p>
+    <main class="container">
+      <section class="main row">
+        <article class="col-lg-4 col-md-6 col-xs-12 mb-4">
+          <div div class="card" style="width: 18rem">
+            <img src="../img/sweater1.jpg" class="card-img-top" alt="..." />
+            <div class="card-body text-center">
+              <h5 class="card-title">Polera Roja</h5>
+              <p class="card-precio">$7.000 <s> $8.200</s></p>
+              <a href="#" class="btn--enviar btn btn">Comprar</a>
             </div>
-            <div class="producto-2">
-                <img class="img-produc" src="../img/imag2.jpg" alt="">
-                <p class="">Lorem ipsum dolor sit amet, consectet</p>
-                <p class="">$1234</p>
-            </div>
-            <div class="producto-3">
-                <img class="img-produc" src="../img/imag3.jpeg" alt="">
-                <p class="">Lorem ipsum dolor sit amet, consectet</p>
-                <p class="">$1234</p>
-            </div>
-            <div class="producto-4">
-                <img class="img-produc" src="../img/imag4.jpg" alt="">
-                <p class="">Lorem ipsum dolor sit amet, consectet</p>
-                <p class="">$1234</p>
-            </div>
-    
-            <div class="producto-6">
-                <img class="img-produc" src="../img/imag5.jpg" alt="">
-                <p class="">Lorem ipsum dolor sit amet, consectet</p>
-                <p class="">$1234</p>
-            </div>
-            <div class="producto-6">
-                <img class="img-produc" src="../img/imag6.jpg" alt="">
-                <p class="">Lorem ipsum dolor sit amet, consectet</p>
-                <p class="">$1234</p>
-            </div>
-            <div class="producto-6">
-                <img class="img-produc" src="../img/imag7.jpg" alt="">
-                <p class="">Lorem ipsum dolor sit amet, consectet</p>
-                <p class="">$1234</p>
-            </div>
-            <div class="producto-6">
-                <img class="img-produc" src="../img/imag8.jpg" alt="">
-                <p class="">Lorem ipsum dolor sit amet, consectet</p>
-                <p class="">$1234</p>
-            </div>
+          </div>
+        </article>
 
-            <div class="big-img"></div>
-        
+        <article class="col-lg-4 col-md-6 col-xs-12 mb-4">
+          <div div class="card" style="width: 18rem">
+            <img src="../img/sweater2.jpg" class="card-img-top" alt="sweater" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Sweater</h5>
+              <p class="card-precio">$6.000</p>
+              <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="col-lg-4 col-md-6 col-xs-12 mb-4">
+          <div div class="card" style="width: 18rem">
+            <img
+              src="../img/elegido1-2.jpg"
+              class="card-img-top"
+              alt="Polera Blanca"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Polera Blanca</h5>
+              <p class="card-precio">$7.000</p>
+              <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="col-lg-4 col-md-6 col-xs-12 mb-4">
+          <div div class="card" style="width: 18rem">
+            <img src="../img/sweater3.jpg" class="card-img-top" alt="sweater" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Sweater</h5>
+              <p class="card-precio">$5.500</p>
+              <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="col-lg-4 col-md-6 col-xs-12 mb-4">
+          <div div class="card" style="width: 18rem">
+            <img
+              src="../img/sweater5.jpg"
+              class="card-img-top"
+              alt="polera amarilla"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Sweater</h5>
+              <p class="card-precio">$5.500</p>
+              <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="col-lg-4 col-md-6 col-xs-12 mb-4">
+          <div div class="card" style="width: 18rem">
+            <img
+              src="../img/elegido3-2.jpg"
+              class="card-img-top"
+              alt="sweater"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Sweater amarillo corto</h5>
+              <p class="card-precio">$6.500</p>
+              <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="col-lg-4 col-md-6 col-xs-12 mb-4">
+          <div div class="card" style="width: 18rem">
+            <img src="../img/sweater6.jpg" class="card-img-top" alt="Sweater" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Polera Amarilla</h5>
+              <p class="card-precio">$5.500</p>
+              <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+          </div>
+        </article>
+        <article class="col-lg-4 col-md-6 col-xs-12 mb-4">
+          <div div class="card" style="width: 18rem">
+            <img src="../img/sweater8.jpg" class="card-img-top" alt="Sweater" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Sweater</h5>
+              <p class="card-precio">$7.000</p>
+              <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+          </div>
+        </article>
+        <article class="col-lg-4 col-md-6 col-xs-12 mb-4">
+          <div div class="card" style="width: 18rem">
+            <img
+              src="../img/sweater4.jpg"
+              class="card-img-top"
+              alt="polera roja"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Polera Blanca</h5>
+              <p class="card-precio">$6.000</p>
+              <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+          </div>
+        </article>
+        <article class="col-lg-4 col-md-6 col-xs-12 mb-4">
+          <div div class="card" style="width: 18rem">
+            <img src="../img/sweater7.jpg" class="card-img-top" alt="Sweater" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Sweater</h5>
+              <p class="card-precio">$5.500</p>
+              <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+          </div>
+        </article>
+        <article class="col-lg-4 col-md-6 col-xs-12 mb-4">
+          <div div class="card" style="width: 18rem">
+            <img
+              src="../img/elegido4-2.jpg"
+              class="card-img-top"
+              alt="Sweater"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Polera Blanca</h5>
+              <p class="card-precio">$7.000</p>
+              <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+          </div>
+        </article>
+        <article class="col-lg-4 col-md-6 col-xs-12 mb-4">
+          <div div class="card" style="width: 18rem">
+            <img
+              src="../img/sweater9.jpg"
+              class="card-img-top"
+              alt="polera roja"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Sweater</h5>
+              <p class="card-precio">$6.000</p>
+              <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+          </div>
+        </article>
+      </section>
     </main>
-    
-    <!-- 
- <iframe width="560" height="315" src="https://www.youtube.com/embed/6_Can5omQwU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    -->
-       
-    
-    
-    
-        <footer>
-            <div class="container__footer">
-                <div class="box__footer">
-                    <div class="logo">
-                        <img src="../img/Logo.jpeg" alt="">
-                    </div>
-                    <div class="terms">
-                        <p class="p-footer">Descubrí e inspirate con nuestro universo, nuestras novedades, eventos, nuevos ingresos, lanzamientos y promociones suscribiéndote a nuestro newsletter.</p>
-                    </div>
-                </div>
-          
-                <div class="box__footer">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hanger" width="68" height="68" viewBox="0 0 24 24" stroke-width="1" stroke="#343434" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M15 7a3 3 0 1 0 -3 3v2m0 0l-8.624 5.488a0.82 .82 0 0 0 .44 1.512h16.368a0.82 .82 0 0 0 .44 -1.512l-8.624 -5.488z" />
-                  </svg>
-                    <a class="a-footer" href="#">Nueva Colección</a>
-                    <a class="a-footer" href="./accesorios.html">Accesorios</a>
-                    <a class="a-footer" href="./nosotros.html">Nosotros</a>
-                    <a class="a-footer" href="./contacto.html">Contacto</a>              
-                </div>
-          
-                <div class="box__footer">
-                    <h2>Redes Sociales</h2>
-                    <a class="a-footer" href="#"> <i class="fab fa-facebook-square"></i> Facebook</a>
-                    <a class="a-footer" href="#"><i class="fab fa-instagram-square"></i> Instagram</a>
-                    <a class="a-footer" href="#"><i class="fab fa-brands fa-tiktok"></i> Tik Tok</a>
-                </div>
-          
-            </div>
-          
-            <div class="box__copyright">
-                <hr>
-                <p>Todos los derechos reservados © 2022 <b>Rivia Clothing</b></p>
-            </div>
-          </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-</body>
+    <section class="parrafosNC">
+      <p class="parrafoH">
+        Vestite con ropa de moda para mujer y armá tus conjuntos de ropa casual,
+        elegante o juvenil según el estilo que más se ajuste a vos.
+      </p>
+      <br>
+      <p class="parrafoH">
+        En Rivia podés encontrar variedad de productos para combinar como
+        camisas, remeras, sweaters o abrigos para mujer, que podés complementar
+        con pantalones de vestir o jeans.
+      </p>
+    </section>
+
+    <div class="whatsApp">
+      <a
+        href="https://api.whatsapp.com/send?phone=+542236690000"
+        target="_blank"
+        ><img src="../img/whats6.png" alt="Link a WhatsApp"
+      /></a>
+    </div>
+
+    <footer>
+      <div class="container__footer">
+        <div class="box__footer">
+          <div class="logo">
+            <img src="../img/Logo.jpeg" alt="" />
+          </div>
+          <div class="terms">
+            <p class="p-footer">
+              Descubrí e inspirate con nuestro universo, nuestras novedades,
+              eventos, nuevos ingresos, lanzamientos y promociones
+              suscribiéndote a nuestro newsletter.
+            </p>
+          </div>
+        </div>
+
+        <div class="box__footer">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-hanger"
+            width="68"
+            height="68"
+            viewBox="0 0 24 24"
+            stroke-width="1"
+            stroke="#343434"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M15 7a3 3 0 1 0 -3 3v2m0 0l-8.624 5.488a0.82 .82 0 0 0 .44 1.512h16.368a0.82 .82 0 0 0 .44 -1.512l-8.624 -5.488z"
+            />
+          </svg>
+          <a class="a-footer" href="#">Nueva Colección</a>
+          <a class="a-footer" href="./accesorios.html">Accesorios</a>
+          <a class="a-footer" href="./nosotros.html">Nosotros</a>
+          <a class="a-footer" href="./contacto.html">Contacto</a>
+        </div>
+
+        <div class="box__footer">
+          <h2>Redes Sociales</h2>
+          <a class="a-footer" href="#">
+            <i class="fab fa-facebook-square"></i> Facebook</a
+          >
+          <a class="a-footer" href="#"
+            ><i class="fab fa-instagram-square"></i> Instagram</a
+          >
+          <a class="a-footer" href="#"
+            ><i class="fab fa-brands fa-tiktok"></i> Tik Tok</a
+          >
+        </div>
+      </div>
+
+      <div class="box__copyright">
+        <hr />
+        <p>Todos los derechos reservados © 2022 <b>Rivia Clothing</b></p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
